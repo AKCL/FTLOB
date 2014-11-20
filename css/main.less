@@ -41,11 +41,12 @@ header{
 
 .feature{
   font: @custom-font-family;
-  height: 800px;
-  position: relative;
-  background: url(../img/case-crop-lg.jpg) no-repeat;
-  background-position: center center;
+  height: 480px;
+  background: url(../img/case-crop-sm.jpg) no-repeat;
+  background-position: center top;
   background-size: cover;
+  position: relative;
+ 
   margin-bottom: 0;
   span{
   	position: absolute;
@@ -142,5 +143,88 @@ footer{
     }
 
 }
+
+@media screen and (min-width: 640px){
+  
+  header{
+    h1{
+      font-size: 84px;  
+    }
+    h2{
+      font-size: 48px;  
+    }
+
+  }
+
+  .feature{
+    height: 600px;
+    background: url(../img/case-crop-med.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  footer{
+  
+    .brand{
+      height: 120px;
+    }
+
+    
+    .aklc{
+        right: 0;
+        //top: 30px;
+        width: 250px;
+     }
+
+    .libs{
+        left: auto;
+        right: 290px;
+        top: 35px;
+            // right: 210px;
+        width: 160px;
+    }
+
+  }
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+
+  header{
+    h1{
+      font-size: 112px;  
+    }
+    h2{
+      font-size: 64px;  
+    }
+
+    .exhib-details{
+      font-size: 1.5em;
+    }
+  }
+
+  .feature{
+    height: 800px;
+    background: url(../img/case-crop-lg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .intro{
+
+    h2{
+        font-size: 64px;
+        line-height: 1.42857143;
+    }
+    background: url(../img/gplaypattern_@2X.png) repeat;
+    text-align: center;
+  }
+
+}
+
 
 // Extra small devices Phones (<768px)	Small devices Tablets (≥768px)	Medium devices Desktops (≥992px)	Large devices Desktops (≥1200px)
